@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.content-header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+
+  /* Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* CSS GRID */
+  grid-column: 1/-1;
+}
+.site-nav-list {
+  list-style: none;
+
+  /* Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+.site-logo {
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  margin-left: 1em;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 8em;
+  height: auto;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
