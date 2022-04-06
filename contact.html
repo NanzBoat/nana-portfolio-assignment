@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nana Boateng</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="imgs/logos/uon-logo.jpg"
+        alt="Site Logo: NB"
+        class="site-logo"
+      />
+      <nav class="site-nav">
+        <ul class="site-nav-list">
+          <li class="site-nav-list-item">
+            <a href="index.html" class="site-nav-list-link"> Home </a>
+          </li>
+          <li class="site-nav-list-item">
+            <a href="blog.html" class="site-nav-list-link"> Skills </a>
+          </li>
+          <li class="site-nav-list-item">
+            <a href="portfolio.html" class="site-nav-list-link"> Portfolio </a>
+          </li>
+          <li class="site-nav-list-item">
+            <a href="about.html" class="site-nav-list-link"> About </a>
+          </li>
+          <li class="site-nav-list-item">
+            <a href="contact.html" class="site-nav-list-link">Contact</a>
+          </li>
+          <li class="site-nav-list-item">
+            <a href="sitereport.html" class="site-nav-list-link">Site Report</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact-container">
+      <form action="action">
+        <header><h2>Contact Form</h2></header>
+        <section class="name">
+          <label for="firstname" class="input-label">Firstname</label
+          ><input
+            type="text"
+            name="firstname"
+            id="firstname"
+            maxlength="20"
+            placeholder="Enter Firstname"
+          />
+          <label for="surname" class="input-label">Surname</label
+          ><input
+            type="text"
+            name="surname"
+            id="surname"
+            maxlength="20"
+            placeholder="Enter Surname"
+          />
+        </section>
+        <section class="communication">
+          <label for="email" class="input-label">E-mail</label
+          ><input
+            type="text"
+            name="email"
+            id="email"
+            maxlength="320"
+            placeholder="Email Address"
+          />
+          <label for="mobile-number" class="input-label">Mobile Number</label
+          ><input
+            type="text"
+            name="mobile-number"
+            id="mobile-number"
+            maxlength="15"
+            placeholder="Mobile Number"
+          />
+        </section>
+        <input
+          type="text"
+          name="subject"
+          class="subject"
+          id="subject"
+          maxlength="30"
+          placeholder="Subject (i.e What is the message about)"
+        />
+        <textarea
+          class="message"
+          id="message"
+          name="message"
+          cols="40"
+          rows="10"
+          maxlength="2000"
+          placeholder="Leave a message..."
+        >
+  Dear Nana,</textarea
+        >
+        <input type="submit" class="submit" id="submit" />
+      </form>
+    </main>
+    <footer class="footer">
+      <nav class="social-media-nav"></nav>
+      Copyright &copy; 2022 | Nana Boateng
+    </footer>
+  </body>
+</html>
