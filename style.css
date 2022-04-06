@@ -8,7 +8,7 @@
 body {
   /* background-color: grey; */
   /* background-image: url(background-imgs/circuit-tree.png); */
-  background-image: url(background-imgs/white-circuit.png);
+  background-image: url(imgs/background-imgs/white-circuit.png);
   margin: 0 auto;
   /* CSS GRID */
   display: grid;
@@ -47,6 +47,12 @@ body {
 }
 
 /*Site Header Components*/
+.site-logo {
+  border-radius: 50%;
+  width: 2.5em;
+  height: auto;
+  margin-left: 1em;
+}
 .site-nav-list {
   list-style: none;
 
@@ -57,11 +63,25 @@ body {
   justify-content: space-evenly;
   gap: 1em;
 }
-.site-logo {
-  border-radius: 50%;
-  width: 2.5em;
-  height: auto;
-  margin-left: 1em;
+.site-nav-list-link {
+  text-decoration: none;
+}
+
+.site-nav-list-link:link {
+  color: white;
+}
+
+.site-nav-list-link:visited {
+  color: white;
+}
+
+.site-nav-list-link:hover {
+  color: grey;
+  border-bottom: 0.2em solid #fff;
+}
+
+.site-nav-list-link:active {
+  color: rgb(76, 76, 77);
 }
 /*Index page components*/
 .profile-img {
