@@ -116,7 +116,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.3fr 1fr 1fr;
+  /* grid-template-rows: 0.3fr 1fr 1fr; */
 
   row-gap: 2em;
 
@@ -142,7 +142,7 @@ body {
 
 .thumbnail-link:hover > .thumbnail-img,
 .thumbnail-link:active > .thumbnail-img {
-  width: 18em;
+  width: 17em;
   border: 0;
 }
 
