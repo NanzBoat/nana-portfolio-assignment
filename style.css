@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 body {
   /* background-color: grey; */
@@ -65,6 +65,7 @@ body {
 }
 .site-nav-list-link {
   text-decoration: none;
+  font-weight: bold;
 }
 
 .site-nav-list-link:link {
