@@ -61,7 +61,8 @@ body {
   align-items: center;
   justify-content: space-between;
   justify-content: space-evenly;
-  gap: 1em;
+  gap: 2em;
+  margin-right: 1em;
 }
 .site-nav-list-link {
   text-decoration: none;
@@ -98,8 +99,8 @@ body {
 }
 .profile-header,
 .profile-introduction,
-.profile-skills,
-.portfolio-btn {
+.profile-skills
+/*.portfolio-btn*/ {
   /* CSS GRID */
   grid-column: 1/-1;
 }
@@ -108,6 +109,18 @@ body {
 }
 .profile-introduction {
   grid-column: 2 / span 3;
+}
+.portfolio-btn {
+  grid-column: 3;
+  justify-self: center;
+}
+.portfolio-btn input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+}
+.portfolio-btn input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* PORTFOLIO CSS*/
