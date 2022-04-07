@@ -248,11 +248,38 @@ body {
   text-align: center;
 }
 
-.blog-article {
+.blog-article-thumbnail {
   background-color: #fff;
 }
 
 .blog-articles .thumbnail-link:hover > .thumbnail-img,
 .blog-articles .thumbnail-link:active > .thumbnail-img {
   border: 0.2em solid black;
+}
+
+/* BLOG ARTICLES */
+.blog-article {
+  background-color: #fff;
+
+  /* CSS GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.blog-article header/*,
+.banner-img*/ {
+  grid-column: 1/-1;
+}
+
+.blog-article header {
+  text-align: center;
+}
+
+.banner-img {
+  width: 70em;
+  height: auto;
+
+  display: block;
 }
