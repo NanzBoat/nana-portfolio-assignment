@@ -17,13 +17,14 @@ body {
     rgb(90, 90, 90) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  transition: background 10s ease-in;
   color: #fff;
   margin: 0 auto;
   /* CSS GRID */
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1em;
+  /* Animation */
+  transition: background 10s ease-in;
 }
 
 body:hover {
@@ -36,6 +37,8 @@ body:hover {
 }
 
 /*3 Main Components*/
+/* TODO: Create mobile nav bar
+TODO: Move to desktop.css */
 .site-header {
   background-color: black;
   color: white;
@@ -49,9 +52,15 @@ body:hover {
   /* CSS GRID */
   grid-column: 1/-1;
 }
+
 main {
   min-height: 80vh;
+  /* Animation */
+  animation: fade-in ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 .footer {
   background-color: black;
   color: white;
@@ -68,6 +77,8 @@ main {
   height: auto;
   margin-left: 1em;
 }
+/* TODO: Create mobile nav bar layout
+TODO: Move to destop.css */
 .site-nav-list {
   list-style: none;
 
@@ -79,6 +90,7 @@ main {
   gap: 2em;
   margin-right: 1em;
 }
+
 .site-nav-list-link {
   text-decoration: none;
   font-weight: bold;
@@ -101,6 +113,8 @@ main {
   color: rgb(76, 76, 77);
 }
 /*INDEX CSS*/
+/* TODO: Adjust to single column for mobile.css */
+/* TODO: Move "INDEX CSS" to desktop.css*/
 .profile-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -146,6 +160,8 @@ main {
 }
 
 /* PORTFOLIO CSS*/
+/* TODO: Adjust to single column for mobile.css */
+/* TODO: Move "INDEX CSS" to desktop.css*/
 .website-thumbnails {
   grid-column: 1/-1;
 
@@ -205,6 +221,8 @@ main {
 }
 
 /*CONTACT*/
+/* TODO: Adjust width of form and viewport for mobile.css */
+/* TODO: Move "INDEX CSS" to desktop.css*/
 .contact-container {
   width: 40em;
   margin: 0 auto;
@@ -261,6 +279,8 @@ main {
   height: auto;
 }
 /* BLOG CSS */
+/* TODO: Adjust to single column for mobile.css */
+/* TODO: Move "INDEX CSS" to desktop.css*/
 .blog-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -284,7 +304,8 @@ main {
 .blog-articles .thumbnail-link:active > .thumbnail-img {
   border: 0.2em solid black;
 }
-
+/* TODO: Adjust to single column for mobile.css */
+/* TODO: Move "INDEX CSS" to desktop.css*/
 /* BLOG ARTICLES */
 .blog-article {
   background-color: #fff;
@@ -305,11 +326,21 @@ main {
   text-align: center;
 }
 
+/* TODO: Adjust banner size for mobile.css */
 .banner-img {
   width: 70em;
   height: auto;
 
   display: block;
+}
+/* main animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Shooting stars animation */
@@ -371,6 +402,8 @@ body:hover .shooting-star:nth-child(10) {
   animation: shooting-star7 5s infinite linear;
 }
 
+/* TODO: adjust angle for mobile.css .
+TODO: Copy adjusted angle to mobile.css*/
 @keyframes shooting-star1 {
   0% {
     transform: translate(0, 0) rotate(20deg);
