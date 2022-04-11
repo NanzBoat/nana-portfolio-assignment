@@ -17,12 +17,14 @@ body {
     rgb(90, 90, 90) 40%,
     rgba(0, 0, 0, 1) 100%
   );
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   margin: 0 auto;
   /* CSS GRID */
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 1em;
+  row-gap: 2vh;
   /* Animation */
   transition: background 10s ease-in;
 }
@@ -42,7 +44,7 @@ TODO: Move to desktop.css */
 .site-header {
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 1em 0;
 
   /* Flexbox */
   display: flex;
@@ -70,6 +72,12 @@ main {
   grid-column: 1/-1;
 }
 
+.site-header,
+main,
+.footer {
+  max-width: 100vw;
+}
+
 /*Site Header Components*/
 .site-logo {
   border-radius: 50%;
@@ -87,7 +95,7 @@ TODO: Move to destop.css */
   align-items: center;
   justify-content: space-between;
   justify-content: space-evenly;
-  gap: 2em;
+  gap: 3vw;
   margin-right: 1em;
 }
 
@@ -120,7 +128,7 @@ TODO: Move to destop.css */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, auto);
 
-  row-gap: 1em;
+  row-gap: 5vh;
 }
 .profile-img {
   border-radius: 50%;
@@ -169,7 +177,7 @@ TODO: Move to destop.css */
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: 0.3fr 1fr 1fr; */
 
-  row-gap: 1em;
+  row-gap: 5vh;
 
   align-items: center;
   justify-items: center;
@@ -180,7 +188,7 @@ TODO: Move to destop.css */
 }
 
 .thumbnail-img {
-  width: 17em;
+  width: 30vw;
   height: auto;
 
   /* border-radius: 20%; */
@@ -224,7 +232,7 @@ TODO: Move to destop.css */
 /* TODO: Adjust width of form and viewport for mobile.css */
 /* TODO: Move "INDEX CSS" to desktop.css*/
 .contact-container {
-  width: 40em;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -232,7 +240,7 @@ TODO: Move to destop.css */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  row-gap: 1em;
+  row-gap: 5%;
 
   background-color: rgb(60, 60, 60);
   margin: 0.5em;
@@ -249,6 +257,7 @@ TODO: Move to destop.css */
   border-bottom: 0.2em solid #000;
   margin-bottom: 0.8em;
   padding: 0.2em;
+  width: 50%;
 }
 .contact-container textarea {
   background-color: rgb(192, 192, 192);
@@ -284,8 +293,8 @@ TODO: Move to destop.css */
 .blog-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 1em;
-  column-gap: 1em;
+  row-gap: 5vh;
+  column-gap: 3vw;
 
   align-items: flex-start;
   justify-items: center;
@@ -328,7 +337,7 @@ TODO: Move to destop.css */
 
 /* TODO: Adjust banner size for mobile.css */
 .banner-img {
-  width: 70em;
+  width: 70vw;
   height: auto;
 
   display: block;
@@ -360,7 +369,7 @@ TODO: Move to destop.css */
   width: 0.2em;
   height: 0.2em;
   transform: rotate(45deg);
-  filter: drop-shadow(0 0 6px rgb(226, 209, 226));
+  filter: drop-shadow(0 0 0.2em rgb(226, 209, 226));
   /* box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1); */
   z-index: 1;
   display: none;
