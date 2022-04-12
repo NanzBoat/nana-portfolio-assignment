@@ -49,7 +49,8 @@ TODO: Move to desktop.css */
   /* Flexbox */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1%;
 
   /* CSS GRID */
   grid-column: 1/-1;
@@ -87,18 +88,13 @@ main,
 }
 /* TODO: Create mobile nav bar layout
 TODO: Move to destop.css */
+.site-nav {
+  background-color: #000;
+  z-index: 3;
+}
 .site-nav-list {
   list-style: none;
-
-  /* Flexbox */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: space-evenly;
-  gap: 3vw;
-  margin-right: 1em;
 }
-
 .site-nav-list-link {
   text-decoration: none;
   font-weight: bold;
