@@ -177,21 +177,12 @@ TODO: Move to destop.css */
   /* grid-template-rows: 0.3fr 1fr 1fr; */
 
   row-gap: 5vh;
-
   align-items: center;
   justify-items: center;
 }
 
 .website-thumbnails header {
   grid-column: 1/-1;
-}
-
-.thumbnail-img {
-  width: 30vw;
-  height: auto;
-
-  /* border-radius: 20%; */
-  border: 1em solid rgb(0, 0, 0, 0);
 }
 
 .thumbnail-link:hover > .thumbnail-img,

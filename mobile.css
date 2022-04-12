@@ -144,3 +144,43 @@
     transform: translateX(-100%);
   }
 }
+
+/* Pages CSS */
+
+/* INDEX */
+
+/* BLOG */
+.blog-article-thumbnail {
+  grid-column: 1/-1;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.thumbnail-link {
+  display: block;
+}
+
+/* thumbnails */
+.thumbnail-img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 20%; */
+  border: 1em solid rgb(0, 0, 0, 0);
+}
+.thumbnail-overlay {
+  transition: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(75, 75, 75, 0.6);
+}
+
+/* PORTFOLIO THUMBNAIL */
+.website-thumbnail {
+  grid-column: 1/-1;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+}

@@ -13,3 +13,16 @@
   gap: 3vw;
   margin-right: 1em;
 }
+
+.thumbnail-img {
+  width: 30vw;
+  height: auto;
+
+  /* border-radius: 20%; */
+  border: 1em solid rgb(0, 0, 0, 0);
+}
+
+.blog-articles {
+  align-items: flex-start;
+  justify-items: center;
+}
