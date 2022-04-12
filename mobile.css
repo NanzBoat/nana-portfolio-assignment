@@ -184,3 +184,36 @@
   height: auto;
   margin: 0 auto;
 }
+
+/* SHOOTING STAR ANIMATION */
+body:hover .shooting-star:nth-child(1) {
+  /* animation: tail 20s infinite ease-in-out; */
+  animation: shooting-star1 7s infinite ease-in;
+}
+body:hover .shooting-star:nth-child(2) {
+  animation: shooting-star2 6s infinite linear;
+}
+body:hover .shooting-star:nth-child(3) {
+  animation: shooting-star3 4s infinite linear;
+}
+body:hover .shooting-star:nth-child(4) {
+  animation: shooting-star4 5s infinite linear;
+}
+body:hover .shooting-star:nth-child(5) {
+  animation: shooting-star5 6s infinite linear;
+}
+body:hover .shooting-star:nth-child(6) {
+  animation: shooting-star6 4s infinite linear;
+}
+body:hover .shooting-star:nth-child(7) {
+  animation: shooting-star7 3s infinite linear;
+}
+body:hover .shooting-star:nth-child(8) {
+  animation: shooting-star8 6s infinite linear;
+}
+body:hover .shooting-star:nth-child(9) {
+  animation: shooting-star9 7s infinite linear;
+}
+body:hover .shooting-star:nth-child(10) {
+  animation: shooting-star7 4s infinite linear;
+}
