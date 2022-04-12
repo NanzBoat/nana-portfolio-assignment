@@ -60,8 +60,8 @@
   top: 0;
   right: auto;
   width: auto;
-  min-width: 30%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
 
   transition: background 0.5s ease-in;
   animation: slide-out-nav 0.5s linear;
@@ -70,16 +70,38 @@
 .site-nav-list {
   display: grid;
   grid-template-columns: 1;
-  row-gap: 5%;
+  /* row-gap: 10%; */
   display: none;
 }
 
+.site-nav-list-link {
+  display: block;
+  padding: 5% 0;
+}
+
+.site-nav-list-link:hover,
+.site-nav-list-link:active {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+}
+
 .nav-icon {
+  z-index: 3;
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+.site-nav:hover .nav-icon {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5em;
 }
 
 #site-nav:target {
+  /* z-index: 3; */
   display: block;
+  min-width: 30%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 1);
   transition: background 0.5s ease-in;
 

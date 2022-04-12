@@ -29,7 +29,8 @@ body {
   transition: background 10s ease-in;
 }
 
-body:hover {
+body:hover,
+body:active {
   background: radial-gradient(
     circle,
     rgba(0, 0, 0, 1) 40%,
@@ -89,8 +90,8 @@ main,
 /* TODO: Create mobile nav bar layout
 TODO: Move to destop.css */
 .site-nav {
-  background-color: #000;
   z-index: 3;
+  background-color: #000;
 }
 
 .site-nav-list {
@@ -109,7 +110,8 @@ TODO: Move to destop.css */
   color: white;
 }
 
-.site-nav-list-link:hover {
+.site-nav-list-link:hover,
+.site-nav-list-link:active {
   color: grey;
   border-bottom: 0.2em solid #fff;
 }
