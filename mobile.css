@@ -67,9 +67,16 @@
   animation: slide-out-nav 0.5s linear;
 }
 
+.nav-icon {
+  z-index: 3;
+  padding: 0.5em;
+  margin-bottom: 5vh;
+}
+
 .site-nav-list {
   display: grid;
   grid-template-columns: 1;
+  gap: 5vh;
   /* row-gap: 10%; */
   display: none;
 }
@@ -84,12 +91,6 @@
   background-color: #fff;
   color: #000;
   border: 0;
-}
-
-.nav-icon {
-  z-index: 3;
-  padding: 0.5em;
-  padding-bottom: 1em;
 }
 
 .site-nav:hover .nav-icon {
@@ -148,6 +149,9 @@
 /* Pages CSS */
 
 /* INDEX */
+.profile-greeting {
+  grid-column: 1 / -1;
+}
 
 /* BLOG */
 .blog-article-thumbnail {
