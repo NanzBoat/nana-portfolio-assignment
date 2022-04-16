@@ -368,6 +368,7 @@ TODO: Move to destop.css */
 
 .about-container header {
   grid-column: 1/-1;
+  justify-self: center;
   text-align: center;
 }
 
