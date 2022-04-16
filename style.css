@@ -176,6 +176,10 @@ TODO: Move to destop.css */
 .profile-introduction {
   grid-column: 2 / span 3;
 }
+
+.profile-skills li {
+  list-style: none;
+}
 .portfolio-btn {
   grid-column: 3;
   justify-self: center;
@@ -373,6 +377,14 @@ TODO: Move to destop.css */
 
 .personal-statement {
   grid-column: 1/-1;
+}
+
+.work-experience {
+  grid-column: 2;
+}
+.personal-interests {
+  grid-column: 1;
+  grid-row: 4;
 }
 
 /* TODO: Adjust banner size for mobile.css */
