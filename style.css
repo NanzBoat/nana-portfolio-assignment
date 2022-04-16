@@ -39,6 +39,22 @@ body:active {
   );
 }
 
+body:hover main {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background 0.5s linear;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+h3 {
+  margin-bottom: 0.2em;
+}
+p,
+ul {
+  margin-bottom: 0.3em;
+}
+
 /*3 Main Components*/
 /* TODO: Create mobile nav bar
 TODO: Move to desktop.css */
@@ -58,7 +74,10 @@ TODO: Move to desktop.css */
 }
 
 main {
+  margin: 0 2vw;
   min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5em;
   /* Animation */
   animation: fade-in ease 3s;
   animation-iteration-count: 1;
@@ -78,6 +97,10 @@ main {
 main,
 .footer {
   max-width: 100vw;
+}
+
+.site-header h2 {
+  margin: 0;
 }
 
 /*Site Header Components*/
@@ -169,6 +192,10 @@ TODO: Move to destop.css */
 /* PORTFOLIO CSS*/
 /* TODO: Adjust to single column for mobile.css */
 /* TODO: Move "INDEX CSS" to desktop.css*/
+.summary {
+  grid-column: 1/-1;
+  text-align: center;
+}
 .website-thumbnails {
   grid-column: 1/-1;
 
@@ -323,6 +350,29 @@ TODO: Move to destop.css */
 
 .blog-article header {
   text-align: center;
+}
+
+/* ABOUT */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5vh;
+  column-gap: 3vw;
+  justify-items: left;
+  align-items: start;
+}
+
+.about-container header {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.about-container li {
+  margin-left: 2vw;
+}
+
+.personal-statement {
+  grid-column: 1/-1;
 }
 
 /* TODO: Adjust banner size for mobile.css */
