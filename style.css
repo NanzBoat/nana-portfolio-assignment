@@ -330,6 +330,11 @@ TODO: Move to destop.css */
   background-color: rgb(60, 60, 60);
 }
 
+.blog-article-thumbnail h3,
+.website-thumbnails h3 {
+  text-align: center;
+}
+
 .blog-articles .thumbnail-link:hover > .thumbnail-img,
 .blog-articles .thumbnail-link:active > .thumbnail-img {
   border: 0.2em solid black;
@@ -386,6 +391,16 @@ TODO: Move to destop.css */
 .personal-interests {
   grid-column: 1;
   grid-row: 4;
+}
+
+/* SITE REPORT */
+.site-report-container img {
+  margin-bottom: 0.3em;
+}
+
+.img-max-width {
+  width: 100%;
+  height: auto;
 }
 
 /* TODO: Adjust banner size for mobile.css */

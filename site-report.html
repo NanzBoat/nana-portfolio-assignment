@@ -66,8 +66,269 @@
         <li class="shooting-star"></li>
       </ul>
     </div>
-    <h1>Site Report... to be updated</h1>
-    <main class="profile-container"></main>
+    <main class="site-report-container">
+      <header>
+        <h1>Site Report</h1>
+      </header>
+      <section class="06-04-2022">
+        <h2>Date: 6th April 2022</h2>
+        <h3>Initial Commit</h3>
+        <p>
+          The first component of my website was the Homepage (index.html), as
+          this is the page the browser displays. I created the content needed
+          for the page before thinking defining the layout of the page. I used
+          semantic HTML tags such as 'nav' for the navigation bar and 'main' for
+          the pages main content. Then I committed the first version of my code
+          and published my master branch using Visual studio’s source control
+          feature to access Git and GitHub.
+        </p>
+        <h3>CSS Grid Layout – Homepage</h3>
+        <p>
+          I decided to use CSS Grid to create the layout of my page. I used a
+          5-column grid on the Homepage to position the elements at specified
+          locations, while allocating different widths of space.
+        </p>
+        <h3>Navigation Bar</h3>
+        <p>
+          I created a navigation bar to give users access all the sites pages
+          from one location. As a result of my initial design plan, I decided to
+          place the navigation bar within the site’s header. I also used the
+          image of the university logo as a place holder for a potential logo.
+        </p>
+        <h3>Initial Background</h3>
+        <p>
+          Unsure of the best background to use, I decided to use a background
+          image that resembled a circuit as websites and other software require
+          machines to run them. Therefore, it felt relevant, and I believed it
+          was a reasonable choice. After trying a couple different background, I
+          settled for a white background with grey lines resembling a circuit
+          board.
+        </p>
+        <img
+          src="imgs/site-report/initial-background.png"
+          alt="Image of initial page design"
+          class="img-max-width"
+        />
+        <h3>New Branch: Portfolio Page (portfolio.html)</h3>
+        <p>
+          Adding a new page can be considered a major update to the site,
+          especially when this new page requires different components, which
+          require additional CSS rules. As a result, I decided to create an
+          additional branch of code to protect the code within my master branch.
+        </p>
+        <h3>Interactive Images: Portfolio</h3>
+        <p>
+          To represent the placeholder websites, I used links and images which
+          the user could click to access each site respectively. Additionally,
+          to improve the sites interactivity I applied CSS rules which
+          manipulate the properties of the links and images to give the user a
+          greater feeling of control by responding to their actions with the
+          mouse.
+        </p>
+        <h3>CSS Grid Layout: Portfolio Page</h3>
+        <p>
+          Like the homepage, I used CSS Grid to create the layout of the
+          portfolio page. I used a 2-column grid to position the title of the
+          page and the thumbnails/links of the placeholder websites at specified
+          locations. To prevent any of the Grid rules of the different pages
+          from clashing, I used CSS grid to create the layout for every page
+          using the 3 main components (header, main, footer). The main tag then
+          contains a specific grid rule which allows the content within the main
+          of each page to possess different layouts by utilising the class
+          properties of the elements within the CSS file.
+        </p>
+        <h3>Portfolio Page: Debugging Grid Cell Expansion Bug</h3>
+        <p>
+          One of the CSS rules I applied to the websites’ thumbnails causes them
+          to expand when the user hovers over them using the mouse pointer.
+          However, I discovered that 2 of the links to placeholder websites
+          would cause other elements on the page to shift position. After
+          inspecting the html and CSS properties of both elements, I concluded
+          it was the CSS rule specifying the grid row height ratio, which
+          created this problem. After commenting out the CSS rule the problem
+          was solved. After completing the Portfolio page within the new branch,
+          I merged the new changes into the master branch, which contains the
+          main code.
+        </p>
+        <img
+          src="imgs/site-report/debug-grid-cell-expansion.png"
+          alt="Image of CSS Rules: Before and After"
+        />
+        <h3>New Branch: Contact Form (contact.html)</h3>
+        <p>
+          Again, adding another page which required different components and
+          additional CSS rules would cause my currently functional site to
+          become vulnerable to errors. As a result, I decided to create an
+          additional branch of code to protect the code within my master branch.
+        </p>
+        <h3>CSS Grid Layout: Contact Form</h3>
+        <p>
+          With the form element acting as the container for the content on this
+          page I used CSS grid rules to layout the input fields and labels.
+          Using the “mailto” function, as instructed, I designed the form to
+          open the user’s client mail application once the submit button is
+          selected.
+        </p>
+      </section>
+      <section class="07-04-2022">
+        <h2>Date: 7th April 2022</h2>
+        <h3>New Branch: Blog Page (blog.html)</h3>
+        <p>
+          To protect the functionality of my code I created a separate branch to
+          develop the Blog page.
+        </p>
+        <h3>CSS Grid Layout: Blog</h3>
+        <p>
+          I used a 3-column grid layout to position the title of the page and
+          the thumbnails/links of the various blog articles.
+        </p>
+        <h3>Blog Article</h3>
+        <p>
+          Using CSS grid, I created a 3-column layout for all the blog articles.
+        </p>
+      </section>
+      <section class="08-04-2022">
+        <h2>Date: 8th April 2022</h2>
+        <h3>Dark Theme</h3>
+        <p>
+          I decided to change the light theme of my website, as I personally
+          prefer dark themed apps and sites. They are especially beneficial in
+          dark environments.
+        </p>
+        <h3>New Branch: Animation – Shooting Stars Background</h3>
+        <p>
+          When deciding where to use animation, I thought of 3 options:
+          background animation, profile picture animation, and animated text.
+          After setting up a poll on social media for my friends to vote, I
+          listened to the majority and decided on the background animation. To
+          decide which animation I would use in the background, I begun
+          experimenting with a few ideas. Finally, I settled for a change in the
+          background colour gradient, once the user hovers over the site’s body,
+          and some objects which move diagonally, in one direction, across the
+          screen. This animation is intended to emulate a simplistic version of
+          shooting stars in empty space, as well as portray my current skillset
+          which also possesses empty space for new skills and further growth.
+        </p>
+        <img
+          src="imgs/site-report/shooting-star-background.png"
+          alt="Shooting stars background screenshot"
+          class="img-proportion:16:9"
+        />
+        <h3>Resolving Merge Conflict: Blog and Background Animation</h3>
+        <p>
+          Before developing the background animation branch, I had yet to merge
+          the blog branch into the master branch. As a result, when I merged to
+          2 branches consecutively, Visual Studio flagged some conflicting code.
+          It was quite easy to resolve as I simply authorised both changes,
+          since they were necessary.
+        </p>
+      </section>
+      <section class="10-04-2022">
+        <h2>Date: 10th April 2022</h2>
+        <h3>Comments: Planning Further Development</h3>
+        <p>
+          After reading through the CSS rules applied to the desktop version of
+          the website, I decided to leave comments proposing changes to the CSS
+          rules which would suit a mobile display for the website. This made it
+          much easier when writing the CSS rules for the mobile view, as I had a
+          clear direction and an expected outcome.
+        </p>
+      </section>
+      <section class="11-04-2022">
+        <h2>Date: 11th April 2022</h2>
+        <h3>Mobile Optimisation: Percentage Measurements</h3>
+        <p>
+          I changed some measurement values for grid gaps and widths for a few
+          elements, which would need to remain proportional in size to the
+          device screen.
+        </p>
+      </section>
+      <section class="12-04-2022">
+        <h2>Date: 12th April 2022</h2>
+        <h3>Mobile Optimisation: Navigation Bar</h3>
+        <p>
+          Using CSS rules in the mobile.css script, I created a mobile menu
+          which is hidden initially until the user toggles its display state
+          using the hamburger icon. I moved the nav bar outside of the header to
+          achieve the desired effect which resulted in a change within the
+          desktop display.
+        </p>
+        <img
+          src="imgs/site-report/second-nav-bar-design.png"
+          alt="Image of nav bar changes"
+          class="img-max-width"
+        />
+        <h3>GitHub: Host Live Site</h3>
+        <p>
+          I hosted my site on GitHub to view it from my phone and to see how it
+          is rendered when live.
+        </p>
+        <h3>Mobile Optimisation: Debugging</h3>
+        <p>
+          I noticed that the stars on the homepage were causing characters in
+          the main to shift by expanding the grid, after using chrome’s inspect
+          element function. I moved the stars out of the main container, which
+          solved the problem.
+        </p>
+      </section>
+      <section class="16-04-2022">
+        <h2>Date: 16th April 2022</h2>
+        <h3>About Page</h3>
+        <p>
+          As the About page contains only text and the content of the main do
+          not require user interaction, it was highly unlikely that developing
+          the page in the master branch would generate errors. Therefore, I did
+          not create a dedicated branch for this page.
+        </p>
+      </section>
+      <section class="17-04-2022">
+        <h2>Date: 17th April 2022</h2>
+        <h3>Screenshots of HTML and CSS validation reports</h3>
+        <p>index.html:</p>
+        <img
+          src="imgs/site-report/validated-index.png"
+          alt="Index page validation screenshot"
+          class="img-propertion:16:9"
+        />
+        <p>blog.html</p>
+        <img
+          src="imgs/site-report/validated-blog.png"
+          alt="Blog page validation screenshot"
+          class="img-propertion:16:9"
+        />
+        <p>portfolio.html:</p>
+        <img
+          src="imgs/site-report/validated-portfolio.png"
+          alt="Portfolio page validation screenshot"
+          class="img-propertion:16:9"
+        />
+        <p>about.html:</p>
+        <img
+          src="imgs/site-report/validated-about.png"
+          alt="About page validation screenshot"
+          class="img-propertion:16:9"
+        />
+        <p>contact.html:</p>
+        <img
+          src="imgs/site-report/validated-contact.png"
+          alt="Contact page validation screenshot"
+          class="img-propertion:16:9"
+        />
+        <p>site-report.html:</p>
+        <img
+          src="imgs/site-report/validated-site-report.png"
+          alt="Site report page validation screenshot"
+        />
+        <p>CSS scripts:</p>
+        <img
+          src="imgs/site-report/validated-css.png"
+          alt="CSS validation screenshot"
+          class="img-propertion:16:9"
+        />
+
+        <p>Site Report Completed.</p>
+      </section>
+    </main>
     <footer class="footer">
       <nav class="social-media-nav"></nav>
       Copyright &copy; 2022 | Nana Boateng

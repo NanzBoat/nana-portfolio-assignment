@@ -9,7 +9,7 @@ body {
   border-bottom: 0.2em solid white;
   border-radius: 10%;
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -80,7 +80,7 @@ body {
 
 .site-nav-list {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   gap: 5vh;
   /* row-gap: 10%; */
   display: none;
@@ -182,14 +182,14 @@ body {
   /* border-radius: 20%; */
   border: 1em solid rgb(0, 0, 0, 0);
 }
-.thumbnail-overlay {
+/* .thumbnail-overlay {
   transition: 0.5s;
 
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(75, 75, 75, 0.6);
-}
+} */
 
 /* PORTFOLIO THUMBNAIL */
 .website-thumbnail {
@@ -197,6 +197,12 @@ body {
   width: 70vw;
   height: auto;
   margin: 0 auto;
+}
+
+/* SITE REPORT */
+.img-proportion-16-9 {
+  width: 100%;
+  height: auto;
 }
 
 /* SHOOTING STAR ANIMATION */

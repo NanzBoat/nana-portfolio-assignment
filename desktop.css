@@ -26,3 +26,9 @@
   align-items: flex-start;
   justify-items: center;
 }
+
+/* SITE REPORT */
+.img-proportion-16-9 {
+  width: 50%;
+  height: auto;
+}
