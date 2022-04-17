@@ -257,6 +257,10 @@ TODO: Move to destop.css */
   margin: 0 auto;
 }
 
+.my-contacts {
+  text-align: center;
+}
+
 .contact-container form {
   display: grid;
   grid-template-columns: 1fr;
